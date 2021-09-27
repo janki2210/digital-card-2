@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgray;
+}
+.card{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    background:whitesmoke;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px darkgray;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:-77%;
+    background: rgba(100, 148, 237, 0.425);
+    transform: skewY(345deg);
+    transition:1s;
+}
+/* .card:hover::before{
+    top:-77%;
+    transform: skewY(390deg);
+} */
+.card::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: white;
+}
+.card .imgbox{
+    width:100%;
+    position: absolute;
+    top:-14%;
+    bottom: 38%;
+    /* right: -6%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    z-index: 1;
+}
+.card .imgbox img{
+    max-width:100%;
+    height: 105px;
+    transition: 0.5s;
+    border-radius: 50%;
+    border: 7px solid rgba(255, 0, 0, 0.308);
+}
+.card:hover .imgbox img{
+    transform: scale(1.1);
+   transition:all 1s ease-in-out;
+}
+.card .contentbox{
+    position: absolute;
+    top: 37%;
+    /* margin: 20px; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    z-index: 1;
+    color: black;
+}
+.card .contentbox h3{
+   font-size: 18px;
+   font-weight: 800;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+.card .details{
+    position: absolute;
+    width: 100%;
+    top: 47%;
+    display: flex;
+    justify-content: center;
+    /* align-items:center; */
+    flex-direction: column;
+    z-index: 1;
+    color:black;
+
+}
+.card .details i{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.card .details i:hover{
+    transition: 1s;
+    color: red;
+    background-color: rgba(169, 169, 169, 0.377);
+}
+.card .details h5{
+    font-size: 15px;
+    margin: 5px;
+ }
+ .card .iconbar{
+     position: absolute;
+     width: 100%;
+     height: 50px;
+     bottom: -10%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 1;
+    background: rgba(100, 148, 237, 0.425);
+}
+.card .iconbar:hover{
+     transition: 5s;
+     bottom: 0;
+}
+.card .iconbar span{
+    font-size: 37px;
+}
+.card .iconbar span i{
+    padding: 10px;
+    font-size: 27px;
+    border-radius: 50%;
+}
+.card .iconbar span i:hover{
+    transition: 3s;
+    transform:rotateY(1000deg);
+    color: white;
+}
