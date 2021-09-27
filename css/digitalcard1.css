@@ -120,8 +120,8 @@ body{
      z-index: 1;
     background: rgba(100, 148, 237, 0.425);
 }
-.card .iconbar:hover{
-     transition: 5s;
+.card:hover .iconbar{
+     transition: 1s;
      bottom: 0;
 }
 .card .iconbar span{
