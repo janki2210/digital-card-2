@@ -29,10 +29,10 @@ body{
     transform: skewY(345deg);
     transition:1s;
 }
-/* .card:hover::before{
+.card:hover::before{
     top:-77%;
     transform: skewY(390deg);
-} */
+}
 .card::after{
     content: '';
     position: absolute;
@@ -63,7 +63,7 @@ body{
 }
 .card:hover .imgbox img{
     transform: scale(1.1);
-   transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
 }
 .card .contentbox{
     position: absolute;
